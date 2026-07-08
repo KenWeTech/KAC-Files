@@ -13,7 +13,7 @@ templates:
   MAL:
     collection_order: custom
     sync_mode: sync
-    sort_title: !015_<<collection_name>>
+    sort_title: '!015_<<collection_name>>'
     summary: Animes that are currently <<summary_text>> on MAL.
     url_poster: https://raw.githubusercontent.com/KenWeTech/KAC-Files/main/Covers/<<cover>>
   Anime:
