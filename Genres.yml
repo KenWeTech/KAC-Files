@@ -27,9 +27,17 @@ templates:
     sync_mode: sync
     sort_title: zzz++_<<collection_name>>
     summary: Animes that are in the <<collection_name>> category/genre.
+  Genre:
+    url_poster: https://raw.githubusercontent.com/KenWeTech/KAC-Files/main/Covers/Genres/<<cover>>
+    collection_mode: hide
+    blank_collection: true
+    sync_mode: sync
+    sort_title: zzz++_A_<<collection_name>>
+    summary: Animes that are separated by category/genre.
   Special:
     url_poster: https://raw.githubusercontent.com/KenWeTech/KAC-Files/main/Covers/Genres/<<cover>>
     collection_order: alpha
+    collection_mode: hide
     sync_mode: sync
     sort_title: zzz++_<<collection_name>>
     summary: Animes that are in the <<collection_name>> category/genre.
@@ -65,7 +73,7 @@ collections:
 #############################
 
   Anime Genres:
-    template: {name: anime, separator: genre, key_name: genre, translation_key: separator, cover: "Anime Genres.png"}
+    template: {name: Genre, cover: "Anime-Genres.png"}
 
   Action:
     template: {name: Anime, mal_id: 1, cover: "Action.png"}
