@@ -14,21 +14,46 @@ Welcome to **KAC-Files**! This repository houses some of my personal anime confi
 
 ### Setup & Installation
 
-1. **Download the Config Files**
-   * Download one or both of the YAML files (`Genres.yml` / `Seasons.yml`) depending on which collections you want to use, and place them in your Kometa `config` directory.
+#### Option 1: Install via URL
 
-2. **Add to Kometa Config**
-   * Open your main Kometa `config.yml` file and register the new YAML file(s) under the `collection_files` section for your desired library. This works for any library type or name in your media server (e.g., Anime, TV Shows, Movies, etc.):
+By using the direct URL, Kometa automatically pulls the latest version of the config file every time it runs. If this repository is updated with new collections, seasons, or fixes, your setup will sync automatically—no manual re-downloading required.
 
-   ```yaml
-   libraries:
-     Anime: # Replace with your library name (e.g., Anime, TV Shows, Movies)
-       collection_files:
-         - file: config/Genres.yml   # Use if you downloaded the Genres config
-         - file: config/Seasons.yml  # Use if you downloaded the Seasons config
-   ```
+Open your main Kometa `config.yml` file and register the raw URLs for the YAML file(s) under the `collection_files` section for your desired library. Replace the URL paths with the raw links to your files in this repository:
 
-3. **Run Kometa**
-   * Execute Kometa as usual. It will read the new YAML files and handle everything automatically!
+YAML
 
+```
+libraries:
+  Anime: # Replace with your library name (e.g., Anime, TV Shows, Movies)
+    collection_files:
+      - url: https://raw.githubusercontent.com/KenWeTech/KAC-Files/main/Genres.yml
+      - url: https://raw.githubusercontent.com/KenWeTech/KAC-Files/main/Seasons.yml
 
+```
+
+_Run Kometa as usual, and it will pull the files and covers directly from the repository._
+
+#### Option 2: Install via Local Files
+
+1.  **Download the Config Files**
+  
+    -   Download one or both of the YAML files (`Genres.yml` / `Seasons.yml`) depending on which collections you want to use, and place them in your Kometa `config` directory.
+
+2.  **Add to Kometa Config**
+
+    -   Open your main Kometa `config.yml` file and register the new YAML file(s) under the `collection_files` section for your desired library. This works for any library type or name in your media server (e.g., Anime, TV Shows, Movies, etc.):
+
+    YAML
+    
+    ```
+    libraries:
+      Anime: # Replace with your library name (e.g., Anime, TV Shows, Movies)
+        collection_files:
+          - file: config/Genres.yml   # Use if you downloaded the Genres config
+          - file: config/Seasons.yml  # Use if you downloaded the Seasons config
+    
+    ```
+
+3.  **Run Kometa**
+
+    -   Execute Kometa as usual. It will read the new YAML files and handle everything automatically!
