@@ -20,9 +20,7 @@ By using the direct URL, Kometa automatically pulls the latest version of the co
 
 Open your main Kometa `config.yml` file and register the raw URLs for the YAML file(s) under the `collection_files` section for your desired library. Replace the URL paths with the raw links to your files in this repository:
 
-YAML
-
-```
+```yaml
 libraries:
   Anime: # Replace with your library name (e.g., Anime, TV Shows, Movies)
     collection_files:
@@ -43,9 +41,7 @@ _Run Kometa as usual, and it will pull the files and covers directly from the re
 
     -   Open your main Kometa `config.yml` file and register the new YAML file(s) under the `collection_files` section for your desired library. This works for any library type or name in your media server (e.g., Anime, TV Shows, Movies, etc.):
 
-    YAML
-    
-    ```
+    ```yaml
     libraries:
       Anime: # Replace with your library name (e.g., Anime, TV Shows, Movies)
         collection_files:
